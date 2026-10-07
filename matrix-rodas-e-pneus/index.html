@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matrix Rodas e Pneus | Centro Automotivo em Goiânia - GO</title>
+  
+  <!-- SEO & Open Graph Meta Tags -->
+  <meta name="description" content="Matrix Rodas e Pneus: Centro Automotivo completo no Setor Sudoeste em Goiânia. Especialistas em Suspensão, Freios, Alinhamento 3D, Balanceamento, Motor Flex e Gasolina e Reforma de Rodas.">
+  <meta name="keywords" content="Matrix Rodas e Pneus, oficina mecânica Goiânia, suspensão Goiânia, freios Goiânia, motor flex gasolina, alinhamento 3D, balanceamento de rodas, reforma de rodas Setor Sudoeste">
+  <meta property="og:title" content="Matrix Rodas e Pneus - Centro Automotivo em Goiânia">
+  <meta property="og:description" content="Serviços automotivos com tecnologia e honestidade: Suspensão, Freios, Alinhamento 3D, Balanceamento, Motor Flex e Reforma de Rodas.">
+  <meta property="og:type" content="website">
+
+  <!-- Headers de Segurança Defensiva (Hardening) -->
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com data:; img-src 'self' https://images.unsplash.com https://*.google.com https://*.googleusercontent.com data:; frame-src 'self' https://www.google.com https://maps.google.com; connect-src 'self';">
+
+  <!-- Google Fonts: Montserrat (Pesos Fortes) & Inter (Leitura Limpa) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons com Subresource Integrity (SRI) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  
+  <!-- Estilos Customizados Dark Mode Vermelho & Preto -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Bar de Informações e Contato Rápido -->
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <div class="top-info">
+        <span><i class="fa-solid fa-location-dot text-red"></i> Av. C-17, 61, Setor Sudoeste - Goiânia/GO</span>
+        <span class="desktop-only"><i class="fa-regular fa-clock text-red"></i> Seg à Sex: 08h às 18h | Sáb: 08h às 12h30</span>
+      </div>
+      <div class="top-actions">
+        <a href="https://www.instagram.com/matrix_rodas_e_pneus_/" target="_blank" rel="noopener noreferrer" class="top-link">
+          <i class="fa-brands fa-instagram text-red"></i> @matrix_rodas_e_pneus_
+        </a>
+        <a href="tel:6232876310" class="top-link desktop-only">
+          <i class="fa-solid fa-phone text-red"></i> (62) 3287-6310
+        </a>
+        <a href="https://wa.me/5562992985857?text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento%20para%20o%20meu%20ve%C3%ADculo!" target="_blank" rel="noopener noreferrer" class="top-whatsapp-btn pulse-glow">
+          <i class="fa-brands fa-whatsapp"></i> (62) 99298-5857
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header Fixo com Logo e Navegação -->
+  <header class="header" id="header">
+    <div class="container navbar">
+      <a href="#" class="brand-logo">
+        <div class="logo-symbol">
+          <i class="fa-solid fa-gear spinning-gear"></i>
+        </div>
+        <div class="logo-text">
+          <span class="brand-title">MATRIX</span>
+          <span class="brand-tagline">CENTRO AUTOMOTIVO • RODAS & PNEUS</span>
+        </div>
+      </a>
+
+      <!-- Menu Principal -->
+      <nav class="nav-menu" id="nav-menu">
+        <a href="#inicio" class="nav-link active">Início</a>
+        <a href="#ofertas" class="nav-link">Serviços & Ofertas</a>
+        <a href="#pilares" class="nav-link">Sobre Nós</a>
+        <a href="#orcamento" class="nav-link">Simular Orçamento</a>
+        <a href="#avaliacoes" class="nav-link">Depoimentos</a>
+        <a href="#localizacao" class="nav-link">Como Chegar</a>
+      </nav>
+
+      <div class="nav-cta">
+        <a href="https://wa.me/5562992985857?text=Ol%C3%A1%20Matrix%20Rodas!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento." target="_blank" rel="noopener noreferrer" class="btn btn-red-pulsing">
+          <i class="fa-brands fa-whatsapp"></i> Atendimento WhatsApp
+        </a>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Abrir menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section Impactante (Estilo Grupo Brasileiro em Dark Mode) -->
+  <section class="hero-section" id="inicio">
+    <div class="hero-bg-overlay"></div>
+    <div class="container hero-container">
+      <div class="hero-badge">
+        <span class="badge-dot"></span> CENTRO AUTOMOTIVO COMPLETO NO SETOR SUDOESTE • GOIÂNIA
+      </div>
+
+      <h1 class="hero-heading">
+        CUIDE DO SEU CARRO COM QUEM <br>
+        <span class="text-red-highlight">ENTENDE DE VERDADE</span>
+      </h1>
+
+      <p class="hero-subheading">
+        Oficina mecânica completa: <strong>Suspensão, Freios, Alinhamento 3D, Balanceamento, Motores Flex & Gasolina</strong>, além de reforma especializada de rodas de liga leve e pneus novos com garantia total.
+      </p>
+
+      <div class="hero-cta-group">
+        <a href="https://wa.me/5562992985857?text=Ol%C3%A1%2C%20quero%20solicitar%20um%20or%C3%A7amento%20para%20o%20meu%20carro!" target="_blank" rel="noopener noreferrer" class="btn btn-hero-whatsapp">
+          <i class="fa-brands fa-whatsapp"></i> Falar com Mecânico no WhatsApp
+        </a>
+        <a href="#ofertas" class="btn btn-hero-outline">
+          <i class="fa-solid fa-camera"></i> Ver Serviços e Fotos Reais
+        </a>
+      </div>
+
+      <!-- Barra de Destaques Rápidos -->
+      <div class="hero-highlights-strip">
+        <div class="strip-item">
+          <i class="fa-solid fa-shield-halved text-red"></i>
+          <div>
+            <strong>100% GARANTIA</strong>
+            <span>Peças e mão de obra</span>
+          </div>
+        </div>
+        <div class="strip-sep"></div>
+        <div class="strip-item">
+          <i class="fa-solid fa-credit-card text-red"></i>
+          <div>
+            <strong>PARCELAMENTO</strong>
+            <span>Em até 10x ou 12x no cartão</span>
+          </div>
+        </div>
+        <div class="strip-sep"></div>
+        <div class="strip-item">
+          <i class="fa-solid fa-laptop-code text-red"></i>
+          <div>
+            <strong>DIAGNÓSTICO DIGITAL</strong>
+            <span>Scanner e laser 3D</span>
+          </div>
+        </div>
+        <div class="strip-sep"></div>
+        <div class="strip-item">
+          <i class="fa-solid fa-star text-gold"></i>
+          <div>
+            <strong>5.0 ESTRELAS</strong>
+            <span>Avaliação máxima Google</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Banner Promocional de Transparência / Ticker -->
+  <div class="promo-ticker">
+    <div class="container ticker-flex">
+      <span><i class="fa-solid fa-check-circle text-red"></i> DIAGNÓSTICO TRANSPARENTE</span>
+      <span><i class="fa-solid fa-check-circle text-red"></i> ENVIO DE FOTOS E VÍDEOS PELO WHATSAPP</span>
+      <span><i class="fa-solid fa-check-circle text-red"></i> SEM TROCA DE PEÇAS SEM AUTORIZAÇÃO</span>
+      <span><i class="fa-solid fa-check-circle text-red"></i> EQUIPE TÉCNICA CAPACITADA</span>
+    </div>
+  </div>
+
+  <!-- Vitrine de Serviços & Fotos Reais (Estilo Elementor / Cards de Alta Conversão) -->
+  <section class="services-showcase section-padding" id="ofertas">
+    <div class="container">
+      <div class="section-title-box text-center">
+        <span class="sub-badge">NOSSOS PROCEDIMENTOS</span>
+        <h2 class="main-title">SERVIÇOS AUTOMOTIVOS ESPECIALIZADOS</h2>
+        <div class="red-line"></div>
+        <p class="section-desc">
+          Fotos reais dos procedimentos realizados em nossa oficina. <strong>Clique em qualquer serviço para ampliar a foto</strong> e conhecer como cuidamos do seu carro.
+        </p>
+      </div>
+
+      <div class="services-catalog-grid">
+
+        <!-- 1. Suspensão Automotiva -->
+        <div class="offer-card" onclick="openPhotoModal('suspensao')">
+          <div class="offer-badge">SEGURANÇA & CONFORTO</div>
+          <div class="offer-image-wrap">
+            <img src="assets/suspensao.jpg" alt="Suspensão Automotiva - Amortecedores e Molas" class="offer-photo" loading="lazy">
+            <div class="offer-zoom-hint">
+              <i class="fa-solid fa-magnifying-glass-plus"></i> Clique para ampliar foto
+            </div>
+          </div>
+          <div class="offer-content">
+            <h3 class="offer-title">SUSPENSÃO AUTOMOTIVA</h3>
+            <p class="offer-text">
+              Revisão completa de amortecedores, molas, buchas de bandeja, pivôs, bieletas e terminais de direção. Acabamos com barulhos e instabilidade.
+            </p>
+            <div class="offer-price-box">
+              <span class="price-prefix">Condições Especiais</span>
+              <div class="price-value"><span class="moeda">R$</span> Sob Consulta</div>
+              <span class="price-parcelas">PARCELAMENTO EM ATÉ 10X NO CARTÃO</span>
+            </div>
+            <ul class="offer-features">
+              <li><i class="fa-solid fa-check text-red"></i> Elimina batidas secas e rangidos</li>
+              <li><i class="fa-solid fa-check text-red"></i> Teste detalhado de folgas e amortecedores</li>
+              <li><i class="fa-solid fa-check text-red"></i> Peças com garantia de fábrica</li>
+            </ul>
+            <div class="offer-buttons">
+              <button class="btn btn-card-photo" type="button">
+                <i class="fa-solid fa-camera"></i> Ver Foto do Procedimento
+              </button>
+              <a href="https://wa.me/5562992985857?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento%20para%20SUSPENS%C3%83O%20do%20meu%20carro." target="_blank" rel="noopener noreferrer" class="btn btn-card-whatsapp" onclick="event.stopPropagation()">
+                <i class="fa-brands fa-whatsapp"></i> Orçamento no WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Sistema de Freios -->
+        <div class="offer-card" onclick="openPhotoModal('freios')">
+          <div class="offer-badge">SEGURANÇA CRÍTICA</div>
+          <div class="offer-image-wrap">
+            <img src="assets/freios.jpg" alt="Sistema de Freios - Discos Ventilados e Pastilhas" class="offer-photo" loading="lazy">
+            <div class="offer-zoom-hint">
+              <i class="fa-solid fa-magnifying-glass-plus"></i> Clique para ampliar foto
+            </div>
+          </div>
+          <div class="offer-content">
+            <h3 class="offer-title">FREIOS (DISCOS & PASTILHAS)</h3>
+            <p class="offer-text">
+              Inspeção e substituição de pastilhas de cerâmica/semi-metálicas, discos ventilados e sólidos, lonas, tambores e sangria de fluido DOT 4 / 5.1.
+            </p>
+            <div class="offer-price-box">
+              <span class="price-prefix">Segurança Garantida</span>
+              <div class="price-value"><span class="moeda">R$</span> A partir de 79</div>
+              <span class="price-parcelas">PARCELAMENTO EM ATÉ 10X NO CARTÃO</span>
+            </div>
+            <ul class="offer-features">
+              <li><i class="fa-solid fa-check text-red"></i> Medição da espessura dos discos</li>
+              <li><i class="fa-solid fa-check text-red"></i> Elimina ruídos e perda de frenagem</li>
+              <li><i class="fa-solid fa-check text-red"></i> Diagnóstico de pinças e sistema ABS</li>
+            </ul>
+            <div class="offer-buttons">
+              <button class="btn btn-card-photo" type="button">
+                <i class="fa-solid fa-camera"></i> Ver Foto do Procedimento
+              </button>
+              <a href="https://wa.me/5562992985857?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento%20para%20FREIOS%20do%20meu%20carro." target="_blank" rel="noopener noreferrer" class="btn btn-card-whatsapp" onclick="event.stopPropagation()">
+                <i class="fa-brands fa-whatsapp"></i> Orçamento no WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Alinhamento 3D Computadorizado -->
+        <div class="offer-card" onclick="openPhotoModal('alinhamento')">
+          <div class="offer-badge">GEOMETRIA A LASER</div>
+          <div class="offer-image-wrap">
+            <img src="assets/alinhamento.jpg" alt="Alinhamento 3D Computadorizado a Laser" class="offer-photo" loading="lazy">
+            <div class="offer-zoom-hint">
+              <i class="fa-solid fa-magnifying-glass-plus"></i> Clique para ampliar foto
+            </div>
+          </div>
+          <div class="offer-content">
+            <h3 class="offer-title">ALINHAMENTO 3D LASER</h3>
+            <p class="offer-text">
+              Geometria milimétrica através de câmeras de alta definição nos 4 eixos. Ajuste de cáster, cambagem, convergência e centralização exata do volante.
+            </p>
+            <div class="offer-price-box">
+              <span class="price-prefix">Alta Precisão</span>
+              <div class="price-value"><span class="moeda">R$</span> A partir de 89</div>
+              <span class="price-parcelas">PARCELAMENTO EM ATÉ 10X NO CARTÃO</span>
+            </div>
+            <ul class="offer-features">
+              <li><i class="fa-solid fa-check text-red"></i> Volante 100% alinhado e reto</li>
+              <li><i class="fa-solid fa-check text-red"></i> Evita o desgaste irregular dos pneus</li>
+              <li><i class="fa-solid fa-check text-red"></i> Economia real de combustível</li>
+            </ul>
+            <div class="offer-buttons">
+              <button class="btn btn-card-photo" type="button">
+                <i class="fa-solid fa-camera"></i> Ver Foto do Procedimento
+              </button>
+              <a href="https://wa.me/5562992985857?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20ALINHAMENTO%203D%20para%20o%20meu%20carro." target="_blank" rel="noopener noreferrer" class="btn btn-card-whatsapp" onclick="event.stopPropagation()">
+                <i class="fa-brands fa-whatsapp"></i> Orçamento no WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Balanceamento de Rodas -->
+        <div class="offer-card" onclick="openPhotoModal('balanceamento')">
+          <div class="offer-badge">ZERO TREPIDAÇÃO</div>
+          <div class="offer-image-wrap">
+            <img src="assets/balanceamento.jpg" alt="Máquina de Balanceamento Eletrônico de Rodas" class="offer-photo" loading="lazy">
+            <div class="offer-zoom-hint">
+              <i class="fa-solid fa-magnifying-glass-plus"></i> Clique para ampliar foto
+            </div>
+          </div>
+          <div class="offer-content">
+            <h3 class="offer-title">BALANCEAMENTO DINÂMICO</h3>
+            <p class="offer-text">
+              Equilíbrio estático e dinâmico de massa do conjunto roda e pneu em máquina computadorizada. Elimina trepidações no volante acima de 60 km/h.
+            </p>
+            <div class="offer-price-box">
+              <span class="price-prefix">Conforto em Rodovia</span>
+              <div class="price-value"><span class="moeda">R$</span> A partir de 49</div>
+              <span class="price-parcelas">PARCELAMENTO EM ATÉ 10X NO CARTÃO</span>
+            </div>
+            <ul class="offer-features">
+              <li><i class="fa-solid fa-check text-red"></i> Chumbos adesivos estéticos para rodas esportivas</li>
+              <li><i class="fa-solid fa-check text-red"></i> Condução suave e sem vibrações</li>
+              <li><i class="fa-solid fa-check text-red"></i> Protege os rolamentos e a suspensão</li>
+            </ul>
+            <div class="offer-buttons">
+              <button class="btn btn-card-photo" type="button">
+                <i class="fa-solid fa-camera"></i> Ver Foto do Procedimento
+              </button>
+              <a href="https://wa.me/5562992985857?text=Ol%C3%A1!%20Gostaria%20de%20fazer%20o%20BALANCEAMENTO%20das%20rodas%20do%20meu%20carro." target="_blank" rel="noopener noreferrer" class="btn btn-card-whatsapp" onclick="event.stopPropagation()">
+                <i class="fa-brands fa-whatsapp"></i> Orçamento no WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. Motor Flex e Gasolina -->
+        <div class="offer-card" onclick="openPhotoModal('motor')">
+          <div class="offer-badge">DIAGNÓSTICO ELETRÔNICO</div>
+          <div class="offer-image-wrap">
+            <img src="assets/motor.jpg" alt="Mecânica e Diagnóstico de Motor Flex e Gasolina" class="offer-photo" loading="lazy">
+            <div class="offer-zoom-hint">
+              <i class="fa-solid fa-magnifying-glass-plus"></i> Clique para ampliar foto
+            </div>
+          </div>
+          <div class="offer-content">
+            <h3 class="offer-title">MOTOR FLEX & GASOLINA</h3>
+            <p class="offer-text">
+              Diagnóstico computadorizado com scanner, troca de correia dentada, bicos injetores, velas, bobinas, cabeçote, bomba de combustível e filtros.
+            </p>
+            <div class="offer-price-box">
+              <span class="price-prefix">Potência & Economia</span>
+              <div class="price-value"><span class="moeda">R$</span> Sob Diagnóstico</div>
+              <span class="price-parcelas">PARCELAMENTO EM ATÉ 10X NO CARTÃO</span>
+            </div>
+            <ul class="offer-features">
+              <li><i class="fa-solid fa-check text-red"></i> Leitura de injeção eletrônica com scanner</li>
+              <li><i class="fa-solid fa-check text-red"></i> Troca preventiva de correia dentada e tensores</li>
+              <li><i class="fa-solid fa-check text-red"></i> Limpeza de TBI e equalização de bicos</li>
+            </ul>
+            <div class="offer-buttons">
+              <button class="btn btn-card-photo" type="button">
+                <i class="fa-solid fa-camera"></i> Ver Foto do Procedimento
+              </button>
+              <a href="https://wa.me/5562992985857?text=Ol%C3%A1!%20Gostaria%20de%20uma%20revis%C3%A3o%20no%20MOTOR%20(Flex/Gasolina)%20do%20meu%20carro." target="_blank" rel="noopener noreferrer" class="btn btn-card-whatsapp" onclick="event.stopPropagation()">
+                <i class="fa-brands fa-whatsapp"></i> Orçamento no WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. Reforma & Diamantação de Rodas -->
+        <div class="offer-card" onclick="openPhotoModal('rodas')">
+          <div class="offer-badge">ESPECIALIDADE MATRIX</div>
+          <div class="offer-image-wrap">
+            <img src="assets/rodas.jpg" alt="Reforma e Diamantação CNC de Rodas Esportivas" class="offer-photo" loading="lazy">
+            <div class="offer-zoom-hint">
+              <i class="fa-solid fa-magnifying-glass-plus"></i> Clique para ampliar foto
+            </div>
+          </div>
+          <div class="offer-content">
+            <h3 class="offer-title">REFORMA & DIAMANTAÇÃO CNC</h3>
+            <p class="offer-text">
+              Recuperação completa de rodas amassadas, tortas ou raladas em guias. Desempeno hidráulico a frio, solda TIG em alumínio, torno CNC espelhado e pintura.
+            </p>
+            <div class="offer-price-box">
+              <span class="price-prefix">Acabamento Original</span>
+              <div class="price-value"><span class="moeda">R$</span> A partir de 120</div>
+              <span class="price-parcelas">PARCELAMENTO EM ATÉ 10X NO CARTÃO</span>
+            </div>
+            <ul class="offer-features">
+              <li><i class="fa-solid fa-check text-red"></i> Desempeno sem perder a resistência da liga</li>
+              <li><i class="fa-solid fa-check text-red"></i> Diamantação com brilho e verniz original</li>
+              <li><i class="fa-solid fa-check text-red"></i> Pintura eletrostática automotiva premium</li>
+            </ul>
+            <div class="offer-buttons">
+              <button class="btn btn-card-photo" type="button">
+                <i class="fa-solid fa-camera"></i> Ver Foto do Procedimento
+              </button>
+              <a href="https://wa.me/5562992985857?text=Ol%C3%A1!%20Gostaria%20de%20or%C3%A7ar%20a%20REFORMA%20ou%20DIAMANTA%C3%87%C3%83O%20das%20minhas%20rodas." target="_blank" rel="noopener noreferrer" class="btn btn-card-whatsapp" onclick="event.stopPropagation()">
+                <i class="fa-brands fa-whatsapp"></i> Orçamento no WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Os 3 Pilares de Confiança (Estilo Grupo Brasileiro: Transparência, Honestidade e Capacitação) -->
+  <section class="trust-pillars section-padding" id="pilares">
+    <div class="container">
+      <div class="section-title-box text-center">
+        <span class="sub-badge">NOSSO COMPROMISSO</span>
+        <h2 class="main-title">ATENDIMENTO PERSONALIZADO & TRANSPARENTE</h2>
+        <div class="red-line"></div>
+        <p class="section-desc">
+          Aqui você não é surpreendido com cobranças indevidas. Trabalhamos com respeito ao seu veículo e ao seu bolso.
+        </p>
+      </div>
+
+      <div class="pillars-grid">
+        <!-- Pilar 1: Transparência -->
+        <div class="pillar-card">
+          <div class="pillar-img-box">
+            <img src="assets/motor.jpg" alt="Transparência no diagnóstico automotivo" class="pillar-img" loading="lazy">
+            <div class="pillar-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+          </div>
+          <div class="pillar-body">
+            <h3 class="pillar-title">TRANSPARÊNCIA</h3>
+            <p class="pillar-text">
+              Trabalhamos mediante diagnóstico prévio e laudo técnico. Utilizamos ferramental de ponta e scanners modernos para apurar com exatidão o procedimento necessário para o seu veículo.
+            </p>
+          </div>
+        </div>
+
+        <!-- Pilar 2: Honestidade -->
+        <div class="pillar-card">
+          <div class="pillar-img-box">
+            <img src="assets/freios.jpg" alt="Honestidade e clareza nas peças trocadas" class="pillar-img" loading="lazy">
+            <div class="pillar-icon"><i class="fa-solid fa-handshake"></i></div>
+          </div>
+          <div class="pillar-body">
+            <h3 class="pillar-title">HONESTIDADE</h3>
+            <p class="pillar-text">
+              Sempre esclarecemos os motivos reais para a substituição de qualquer peça, seja com a explicação detalhada do mecânico ou através de fotos e vídeos enviados diretamente no seu WhatsApp.
+            </p>
+          </div>
+        </div>
+
+        <!-- Pilar 3: Capacitação -->
+        <div class="pillar-card">
+          <div class="pillar-img-box">
+            <img src="assets/alinhamento.jpg" alt="Capacitação técnica em mecânica e geometria laser" class="pillar-img" loading="lazy">
+            <div class="pillar-icon"><i class="fa-solid fa-award"></i></div>
+          </div>
+          <div class="pillar-body">
+            <h3 class="pillar-title">CAPACITAÇÃO TÉCNICA</h3>
+            <p class="pillar-text">
+              Prezamos pela organização rigorosa da oficina, excelência nos serviços mecânicos e bem-estar dos nossos clientes, garantindo a sua segurança e a longevidade do automóvel.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Simulador de Orçamento no WhatsApp (Formulário Direto de Alta Conversão) -->
+  <section class="quote-section section-padding" id="orcamento">
+    <div class="container">
+      <div class="quote-card-wrapper">
+        <div class="quote-left-info">
+          <span class="sub-badge text-red">ORÇAMENTO RÁPIDO</span>
+          <h2 class="quote-title">RECEBA O VALOR DO SEU SERVIÇO EM MINUTOS</h2>
+          <p class="quote-desc">
+            Selecione o serviço que seu carro necessita, informe o modelo e envie diretamente para os mecânicos da Matrix Rodas no WhatsApp.
+          </p>
+
+          <div class="quote-checklist">
+            <div class="check-item">
+              <i class="fa-solid fa-circle-check text-red"></i>
+              <div>
+                <strong>Diagnóstico Sem Compromisso:</strong> Avaliamos o seu carro e apresentamos a solução ideal.
+              </div>
+            </div>
+            <div class="check-item">
+              <i class="fa-solid fa-circle-check text-red"></i>
+              <div>
+                <strong>Envio de Fotos para Avaliação:</strong> Tem uma roda amassada ou vazamento? Mande a foto pelo WhatsApp!
+              </div>
+            </div>
+            <div class="check-item">
+              <i class="fa-solid fa-circle-check text-red"></i>
+              <div>
+                <strong>Condições Especiais:</strong> Parcelamento facilitado em até 10x ou 12x no cartão de crédito.
+              </div>
+            </div>
+          </div>
+
+          <div class="quote-phone-direct">
+            <span>Prefere ligar agora?</span>
+            <a href="tel:6232876310"><i class="fa-solid fa-phone"></i> (62) 3287-6310</a>
+          </div>
+        </div>
+
+        <div class="quote-form-container">
+          <h3 class="form-header-title">
+            <i class="fa-brands fa-whatsapp text-red"></i> Preencha para Cotar
+          </h3>
+          <form id="quoteForm">
+            <div class="form-field">
+              <label for="carModel"><i class="fa-solid fa-car text-red"></i> Veículo (Modelo e Ano):</label>
+              <input type="text" id="carModel" placeholder="Ex: Onix 2021, Civic 2.0, Gol 1.6 Flex, Hilux..." required>
+            </div>
+
+            <div class="form-field">
+              <label for="serviceSelect"><i class="fa-solid fa-wrench text-red"></i> Procedimento Desejado:</label>
+              <select id="serviceSelect" required>
+                <option value="" disabled selected>Selecione o serviço...</option>
+                <option value="Suspensão Automotiva (Amortecedores/Buchas)">Suspensão Automotiva (Amortecedores/Buchas)</option>
+                <option value="Sistema de Freios (Discos/Pastilhas)">Sistema de Freios (Discos/Pastilhas)</option>
+                <option value="Alinhamento 3D Computadorizado">Alinhamento 3D Computadorizado</option>
+                <option value="Balanceamento de Rodas">Balanceamento de Rodas</option>
+                <option value="Motor Flex & Gasolina (Revisão/Injeção/Correia)">Motor Flex & Gasolina (Revisão/Injeção/Correia)</option>
+                <option value="Reforma & Diamantação de Rodas">Reforma & Diamantação de Rodas</option>
+                <option value="Pneus Novos e Troca de Óleo">Pneus Novos e Troca de Óleo</option>
+                <option value="Revisão Geral Preventiva">Revisão Geral Preventiva</option>
+              </select>
+            </div>
+
+            <div class="form-row-2">
+              <div class="form-field">
+                <label for="fuelType"><i class="fa-solid fa-gas-pump text-red"></i> Motorização:</label>
+                <select id="fuelType">
+                  <option value="Motor Flex (Álcool/Gasolina)">Motor Flex (Álcool/Gasolina)</option>
+                  <option value="Motor a Gasolina">Motor a Gasolina</option>
+                  <option value="Motor Diesel">Motor Diesel</option>
+                  <option value="Rodas / Pneus">Rodas / Pneus</option>
+                </select>
+              </div>
+
+              <div class="form-field">
+                <label for="urgency"><i class="fa-regular fa-clock text-red"></i> Prazo:</label>
+                <select id="urgency">
+                  <option value="Preciso urgente (Hoje/Amanhã)">Preciso urgente (Hoje/Amanhã)</option>
+                  <option value="Esta semana">Para esta semana</option>
+                  <option value="Pesquisando valores">Pesquisando valores</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label for="additionalNotes"><i class="fa-solid fa-comment-dots text-red"></i> O que está ocorrendo no carro? (Opcional):</label>
+              <textarea id="additionalNotes" rows="2" placeholder="Ex: Roda dianteira ralou na guia; barulho na suspensão ao passar em buraco..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-submit-red">
+              <i class="fa-brands fa-whatsapp"></i> ENVIAR PEDIDO NO WHATSAPP
+            </button>
+            <span class="form-safe-note"><i class="fa-solid fa-lock"></i> Contato direto com os mecânicos da Matrix Rodas.</span>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Depoimentos Reais dos Clientes (Google Reviews) -->
+  <section class="reviews-section section-padding" id="avaliacoes">
+    <div class="container">
+      <div class="section-title-box text-center">
+        <span class="sub-badge">PROVA SOCIAL</span>
+        <h2 class="main-title">O QUE NOSSOS CLIENTES DIZEM</h2>
+        <div class="red-line"></div>
+        <div class="google-badge-pill">
+          <i class="fa-brands fa-google text-red"></i>
+          <span>Avaliação no Google: <strong>5.0 / 5.0 Estrelas</strong></span>
+          <div class="stars-gold">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="reviews-grid">
+        <div class="review-box">
+          <div class="stars-gold mb-2">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="review-quote">
+            "Fiz a suspensão inteira e a troca das pastilhas de freio do meu Onix aqui. Serviço de primeira, preço honesto e me mandaram vídeos de todas as peças velhas trocadas. Nota 10!"
+          </p>
+          <div class="review-user">
+            <div class="user-avatar"><i class="fa-solid fa-user"></i></div>
+            <div>
+              <strong>Rodrigo Mendes</strong>
+              <span>Goiânia/GO • Google Reviews</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-box">
+          <div class="stars-gold mb-2">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="review-quote">
+            "Fiz alinhamento 3D, balanceamento e uma revisão no motor flex do meu carro que estava falhando. Descobriram na hora o defeito com o scanner. Atendimento rápido e transparente."
+          </p>
+          <div class="review-user">
+            <div class="user-avatar"><i class="fa-solid fa-user"></i></div>
+            <div>
+              <strong>Marcos Vinicius de Paula</strong>
+              <span>Goiânia/GO • Google Reviews</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-box">
+          <div class="stars-gold mb-2">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="review-quote">
+            "A diamantação e reforma que fizeram nas rodas da minha SUV ficou simplesmente espetacular! Parecem novas de fábrica. Equipe extremamente cuidadosa e pontual."
+          </p>
+          <div class="review-user">
+            <div class="user-avatar"><i class="fa-solid fa-user"></i></div>
+            <div>
+              <strong>Carla Fernandes</strong>
+              <span>Goiânia/GO • Google Reviews</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Localização, Mapa e Contato -->
+  <section class="location-section section-padding" id="localizacao">
+    <div class="container">
+      <div class="section-title-box text-center">
+        <span class="sub-badge">LOCALIZAÇÃO PRIVILEGIADA</span>
+        <h2 class="main-title">VENHA NOS CONHECER EM GOIÂNIA</h2>
+        <div class="red-line"></div>
+        <p class="section-desc">Fácil acesso no Setor Sudoeste com estacionamento próprio para seu conforto.</p>
+      </div>
+
+      <div class="location-card-grid">
+        <div class="contact-info-panel">
+          <h3 class="panel-heading"><i class="fa-solid fa-wrench text-red"></i> Matrix Rodas e Pneus</h3>
+          
+          <div class="panel-item">
+            <div class="panel-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div>
+              <strong>Endereço Completo:</strong>
+              <p>Av. C-17, nº 61 (Qd. 148, Lt. 01)<br>Setor Sudoeste, Goiânia - GO<br>CEP: 74303-280</p>
+            </div>
+          </div>
+
+          <div class="panel-item">
+            <div class="panel-icon"><i class="fa-solid fa-phone"></i></div>
+            <div>
+              <strong>Central de Atendimento:</strong>
+              <p>
+                Telefone Fixo: <a href="tel:6232876310">(62) 3287-6310</a><br>
+                WhatsApp Oficial: <a href="https://wa.me/5562992985857" target="_blank" rel="noopener noreferrer" class="text-red font-bold">(62) 99298-5857</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="panel-item">
+            <div class="panel-icon"><i class="fa-regular fa-clock"></i></div>
+            <div>
+              <strong>Horário de Funcionamento:</strong>
+              <p>Segunda a Sexta: 08:00 às 18:00<br>Sábado: 08:00 às 12:30</p>
+            </div>
+          </div>
+
+          <div class="map-action-grid">
+            <a href="https://maps.app.goo.gl/MrfMqddAAUJJfHZN6" target="_blank" rel="noopener noreferrer" class="btn btn-red-map">
+              <i class="fa-solid fa-location-arrow"></i> Rota no Google Maps
+            </a>
+            <a href="https://waze.com/ul?ll=-16.6965039,-49.3025382&navigate=yes" target="_blank" rel="noopener noreferrer" class="btn btn-dark-waze">
+              <i class="fa-brands fa-waze"></i> Rota no Waze
+            </a>
+          </div>
+        </div>
+
+        <div class="map-embed-box">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3821.5644783307604!2d-49.3051131!3d-16.6965039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef6bd05512aaf%3A0xa47d51d6448690c5!2sMatrix%20Rodas%20e%20Pneus.!5e0!3m2!1spt-BR!2sbr!4v1711200000000!5m2!1spt-BR!2sbr" 
+            width="100%" 
+            height="100%" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Localização Matrix Rodas e Pneus no Google Maps">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rodapé Institucional Dark Mode -->
+  <footer class="footer-dark">
+    <div class="container footer-content-grid">
+      <div class="footer-col-main">
+        <div class="brand-logo mb-3">
+          <div class="logo-symbol"><i class="fa-solid fa-gear"></i></div>
+          <div class="logo-text">
+            <span class="brand-title">MATRIX</span>
+            <span class="brand-tagline">RODAS & PNEUS</span>
+          </div>
+        </div>
+        <p class="footer-text-bio">
+          Centro automotivo especializado em Goiânia. Atendemos com pontualidade, honestidade e equipamentos digitais de ponta para garantir a segurança da sua família.
+        </p>
+        <div class="footer-social-row">
+          <a href="https://www.instagram.com/matrix_rodas_e_pneus_/" target="_blank" rel="noopener noreferrer" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://wa.me/5562992985857" target="_blank" rel="noopener noreferrer" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://maps.app.goo.gl/MrfMqddAAUJJfHZN6" target="_blank" rel="noopener noreferrer" title="Google Maps"><i class="fa-solid fa-location-dot"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-header">Nossos Serviços</h4>
+        <ul class="footer-link-list">
+          <li><a href="javascript:void(0)" onclick="openPhotoModal('suspensao')">Suspensão Automotiva</a></li>
+          <li><a href="javascript:void(0)" onclick="openPhotoModal('freios')">Freios (Discos e Pastilhas)</a></li>
+          <li><a href="javascript:void(0)" onclick="openPhotoModal('alinhamento')">Alinhamento 3D a Laser</a></li>
+          <li><a href="javascript:void(0)" onclick="openPhotoModal('balanceamento')">Balanceamento de Rodas</a></li>
+          <li><a href="javascript:void(0)" onclick="openPhotoModal('motor')">Motor Flex & Gasolina</a></li>
+          <li><a href="javascript:void(0)" onclick="openPhotoModal('rodas')">Reforma & Diamantação CNC</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-header">Fale Conosco</h4>
+        <p class="footer-item"><i class="fa-solid fa-phone text-red"></i> (62) 3287-6310</p>
+        <p class="footer-item"><i class="fa-brands fa-whatsapp text-red"></i> (62) 99298-5857</p>
+        <p class="footer-item"><i class="fa-solid fa-location-dot text-red"></i> Av. C-17, 61 - Setor Sudoeste</p>
+        <p class="footer-item"><i class="fa-regular fa-clock text-red"></i> Seg a Sex 8h-18h | Sáb 8h-12h30</p>
+      </div>
+    </div>
+
+    <div class="footer-sub-bar">
+      <div class="container sub-bar-flex">
+        <p>&copy; 2026 Matrix Rodas e Pneus LTDA. Todos os direitos reservados.</p>
+        <p>Desenvolvido no padrão Dark Mode de Alta Performance.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal Lightbox com Foto em Alta Definição e Detalhes do Serviço -->
+  <div class="photo-modal-backdrop" id="photoModal" aria-hidden="true">
+    <div class="photo-modal-card">
+      <button class="modal-close" onclick="closePhotoModal()" aria-label="Fechar">&times;</button>
+      
+      <div class="modal-img-container">
+        <img src="" alt="Procedimento do Serviço" id="pModalImg" class="modal-service-image">
+        <span class="modal-category-badge" id="pModalBadge">Especialidade</span>
+      </div>
+
+      <div class="modal-body-panel">
+        <h3 class="modal-service-title" id="pModalTitle">Nome do Serviço</h3>
+        <p class="modal-service-desc" id="pModalDesc">Descrição completa do serviço realizado.</p>
+        
+        <div class="modal-includes-card">
+          <h4 class="includes-heading"><i class="fa-solid fa-circle-check text-red"></i> O que é feito neste serviço:</h4>
+          <ul id="pModalList" class="includes-list"></ul>
+        </div>
+
+        <a href="#" id="pModalWhatsBtn" target="_blank" rel="noopener noreferrer" class="btn btn-modal-whatsapp">
+          <i class="fa-brands fa-whatsapp"></i> SOLICITAR ORÇAMENTO NO WHATSAPP
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Botão Flutuante de WhatsApp com Animação -->
+  <a href="https://wa.me/5562992985857?text=Ol%C3%A1%2C%20estou%20no%20site%20da%20Matrix%20Rodas%20e%20gostaria%20de%20um%20or%C3%A7amento!" class="floating-wa-btn pulse-glow" target="_blank" rel="noopener noreferrer" aria-label="Fale no WhatsApp">
+    <div class="floating-tooltip">Orçamento Rápido no WhatsApp!</div>
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- Script Principal -->
+  <script src="script.js"></script>
+</body>
+</html>
