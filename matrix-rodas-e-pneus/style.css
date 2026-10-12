@@ -2333,3 +2333,11 @@ a i,button i { margin-right:.2rem; }
 @media(prefers-reduced-motion:reduce) {
   *,*::before,*::after { animation:none !important; transition:none !important; scroll-behavior:auto !important; }
 }
+
+/* Logotipo vetorial da marca no cabeçalho */
+.brand-logo { display:flex; align-items:center; flex:0 0 auto; max-width:230px; }
+.brand-image-logo { display:block; width:208px; height:60px; object-fit:contain; object-position:left center; }
+@media(max-width:760px) {
+  .brand-logo { max-width:180px; }
+  .brand-image-logo { width:174px; height:50px; }
+}
