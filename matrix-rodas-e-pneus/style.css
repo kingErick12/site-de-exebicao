@@ -2930,3 +2930,35 @@ a:focus-visible,button:focus-visible { outline:3px solid rgba(159,38,48,.45) !im
   .services-showcase .offer-image-wrap { aspect-ratio:16/9 !important; }
   .services-showcase .offer-content { padding:17px !important; }
 }
+
+
+/* Correção definitiva do grid de serviços: 3 colunas em telas de computador */
+@media (min-width: 761px) {
+  .services-showcase .services-catalog-grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 22px !important;
+  }
+  .services-showcase .services-catalog-grid > .offer-card,
+  .services-showcase .services-catalog-grid > .offer-card:first-child,
+  .services-showcase .services-catalog-grid > .offer-card:nth-child(2) {
+    grid-column: auto !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    margin: 0 !important;
+  }
+}
+@media (max-width: 760px) and (min-width: 481px) {
+  .services-showcase .services-catalog-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 16px !important;
+  }
+}
+@media (max-width: 480px) {
+  .services-showcase .services-catalog-grid {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+}
