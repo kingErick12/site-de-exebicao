@@ -3067,3 +3067,36 @@ body.dark-mode .modal-content { background:#20252d !important; color:#f4f6f9 !im
 body.dark-mode .photo-modal-content h2,
 body.dark-mode .photo-modal-content p,
 body.dark-mode .photo-modal-content li { color:#e1e7ef !important; }
+
+
+/* Corrige a seção "Como Trabalhamos" no modo escuro */
+body.dark-mode .trust-pillars {
+  background:#171b21 !important;
+  color:#e8edf3 !important;
+}
+body.dark-mode .trust-pillars .section-title-box .main-title {
+  color:#f4f6f9 !important;
+  -webkit-text-fill-color:#f4f6f9 !important;
+}
+body.dark-mode .trust-pillars .section-desc {
+  color:#c4ccd6 !important;
+  -webkit-text-fill-color:#c4ccd6 !important;
+}
+body.dark-mode .trust-pillars .pillar-card {
+  background:#20252d !important;
+  border-color:#353d48 !important;
+  color:#e8edf3 !important;
+  box-shadow:0 4px 16px rgba(0,0,0,.22) !important;
+}
+body.dark-mode .trust-pillars .pillar-body {
+  background:#20252d !important;
+  color:#e8edf3 !important;
+}
+body.dark-mode .trust-pillars .pillar-title {
+  color:#ffffff !important;
+  -webkit-text-fill-color:#ffffff !important;
+}
+body.dark-mode .trust-pillars .pillar-text {
+  color:#cbd3de !important;
+  -webkit-text-fill-color:#cbd3de !important;
+}
