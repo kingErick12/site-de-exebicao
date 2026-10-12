@@ -2542,3 +2542,32 @@ footer,.footer { background:#172638 !important; }
   -webkit-text-fill-color:#eef2f6 !important;
 }
 .footer-dark .text-red,footer .text-red { color:#e6a3a7 !important; -webkit-text-fill-color:#e6a3a7 !important; }
+
+/* Correção específica das faixas de diferenciais e garantias: contraste AA */
+.hero-highlights-strip,
+.hero-highlights-strip .strip-item,
+.hero-highlights-strip .strip-item strong,
+.hero-highlights-strip .strip-item span {
+  color:#172638 !important;
+  -webkit-text-fill-color:#172638 !important;
+  opacity:1 !important;
+}
+.hero-highlights-strip .strip-item span { color:#526071 !important; -webkit-text-fill-color:#526071 !important; }
+.hero-highlights-strip .strip-item strong { font-weight:750 !important; }
+.hero-highlights-strip .strip-item i { color:#b52d34 !important; -webkit-text-fill-color:#b52d34 !important; }
+.trust-strip,.trust-strip *,
+.trust-bar,.trust-bar *,
+.benefits-strip,.benefits-strip *,
+.differentials-strip,.differentials-strip *,
+.commitment-strip,.commitment-strip *,
+.promise-strip,.promise-strip * {
+  color:#263445 !important;
+  -webkit-text-fill-color:#263445 !important;
+  text-shadow:none !important;
+  opacity:1 !important;
+}
+.trust-strip i,.trust-bar i,.benefits-strip i,.differentials-strip i,.commitment-strip i,.promise-strip i,
+.trust-strip svg,.trust-bar svg,.benefits-strip svg,.differentials-strip svg,.commitment-strip svg,.promise-strip svg {
+  color:#b52d34 !important;
+  fill:currentColor;
+}
