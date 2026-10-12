@@ -202,15 +202,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const whatsappNumber = '5562992985857';
 
-      let msg = `*Olá, equipe Matrix Rodas e Pneus!* 🚗💨\n`;
+      let msg = `*Olá, equipe Matrix Rodas e Pneus!*\n`;
       msg += `Gostaria de solicitar um orçamento pelo site:\n\n`;
-      msg += `📌 *Veículo:* ${carModel}\n`;
-      msg += `🔧 *Procedimento:* ${serviceSelect}\n`;
-      msg += `⛽ *Motor/Combustível:* ${fuelType}\n`;
-      msg += `⏱️ *Prazo Desejado:* ${urgency}\n`;
+      msg += `*Veículo:* ${carModel}\n`;
+      msg += `*Procedimento:* ${serviceSelect}\n`;
+      msg += `*Motor/Combustível:* ${fuelType}\n`;
+      msg += `*Prazo Desejado:* ${urgency}\n`;
 
       if (additionalNotes) {
-        msg += `📝 *Observações:* ${additionalNotes}\n`;
+        msg += `*Observações:* ${additionalNotes}\n`;
       }
 
       msg += `\nAguardo o retorno de vocês com os valores e disponibilidade. Obrigado!`;
