@@ -2341,3 +2341,49 @@ a i,button i { margin-right:.2rem; }
   .brand-logo { max-width:180px; }
   .brand-image-logo { width:174px; height:50px; }
 }
+
+/* Cabeçalho: wordmark tipográfico limpo, sem símbolo improvisado */
+.brand-logo {
+  display: flex !important;
+  align-items: center;
+  justify-content: flex-start;
+  flex: 0 0 auto;
+  width: auto;
+  max-width: 220px;
+  min-width: 0;
+  text-decoration: none;
+}
+.brand-image-logo { display: none !important; }
+.brand-wordmark {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2px;
+  min-width: 0;
+  line-height: 1;
+}
+.brand-wordmark-main {
+  display: block;
+  color: #14263d;
+  font-family: 'Inter', Arial, sans-serif;
+  font-size: 27px;
+  font-weight: 800;
+  line-height: 1.02;
+  letter-spacing: -1.1px;
+}
+.brand-wordmark-sub {
+  display: block;
+  color: #596779;
+  font-family: 'Inter', Arial, sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 1.35;
+  letter-spacing: 1.25px;
+  white-space: nowrap;
+}
+@media (max-width: 760px) {
+  .brand-logo { max-width: 165px; }
+  .brand-wordmark-main { font-size: 22px; letter-spacing: -.8px; }
+  .brand-wordmark-sub { font-size: 8px; letter-spacing: .9px; }
+}
