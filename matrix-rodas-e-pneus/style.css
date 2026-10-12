@@ -2668,3 +2668,157 @@ section#inicio.hero-section .hero-highlights-strip .strip-item i {
   section#inicio.hero-section { min-height:auto !important; padding:52px 0 34px !important; background-position:58% center !important; }
   section#inicio.hero-section .hero-highlights-strip { display:grid !important; grid-template-columns:repeat(2,minmax(0,1fr)) !important; }
 }
+
+/* === Acabamento executivo: hero, benefícios, ticker e CTA flutuante === */
+:root {
+  --matrix-burgundy:#9f2630;
+  --matrix-ink:#292d32;
+  --matrix-muted:#535b64;
+  --matrix-line:#dfe3e7;
+  --matrix-paper:#f8f9fa;
+}
+body { color:var(--matrix-ink); background:#fff; }
+.container { width:min(1180px,calc(100% - 48px)) !important; margin-left:auto !important; margin-right:auto !important; }
+
+/* Hero fotográfico com fallback sólido caso a imagem não carregue */
+.hero-section {
+  position:relative !important;
+  isolation:isolate;
+  min-height:570px !important;
+  padding:70px 0 36px !important;
+  background-color:#20262d !important;
+  background-image:linear-gradient(90deg,rgba(15,20,26,.91) 0%,rgba(15,20,26,.82) 48%,rgba(15,20,26,.42) 100%),url('./assets/suspensao.jpg') !important;
+  background-position:center 45% !important;
+  background-size:cover !important;
+  background-repeat:no-repeat !important;
+  color:#fff !important;
+}
+.hero-section .hero-bg-overlay { display:none !important; }
+.hero-section .hero-container { max-width:1180px !important; margin:0 auto !important; }
+.hero-section .hero-heading,
+.hero-section .hero-heading *,
+.hero-section .hero-badge,
+.hero-section .hero-highlights-strip strong {
+  color:#fff !important;
+  -webkit-text-fill-color:#fff !important;
+  opacity:1 !important;
+  text-shadow:none !important;
+  background:none !important;
+}
+.hero-section .hero-heading { max-width:800px; font-size:clamp(2.6rem,5vw,4.7rem) !important; line-height:1.04 !important; letter-spacing:-.045em !important; font-weight:800 !important; }
+.hero-section .text-red-highlight { color:#e8a1a6 !important; -webkit-text-fill-color:#e8a1a6 !important; }
+.hero-section .hero-subheading { max-width:680px; color:#eef1f4 !important; -webkit-text-fill-color:#eef1f4 !important; line-height:1.75 !important; }
+.hero-section .hero-cta-group { display:flex !important; flex-wrap:wrap; gap:12px !important; }
+.hero-section .btn-hero-whatsapp { background:var(--matrix-burgundy) !important; border:1px solid var(--matrix-burgundy) !important; border-radius:5px !important; box-shadow:none !important; }
+.hero-section .btn-hero-outline { background:rgba(20,25,31,.35) !important; color:#fff !important; -webkit-text-fill-color:#fff !important; border:1px solid rgba(255,255,255,.62) !important; border-radius:5px !important; box-shadow:none !important; }
+.hero-section .btn-hero-outline:hover { background:#fff !important; color:#20262d !important; -webkit-text-fill-color:#20262d !important; }
+
+/* Benefits: four consistent columns, icon aligned beside its copy */
+.hero-section .hero-highlights-strip {
+  display:grid !important;
+  grid-template-columns:repeat(4,minmax(0,1fr)) !important;
+  align-items:start !important;
+  gap:18px 22px !important;
+  width:100% !important;
+  margin-top:34px !important;
+  padding:22px 0 0 !important;
+  border-top:1px solid rgba(255,255,255,.25) !important;
+  background:transparent !important;
+}
+.hero-section .hero-highlights-strip .strip-sep { display:none !important; }
+.hero-section .hero-highlights-strip .strip-item {
+  display:flex !important;
+  flex-direction:row !important;
+  align-items:flex-start !important;
+  justify-content:flex-start !important;
+  gap:11px !important;
+  min-width:0 !important;
+  color:#fff !important;
+  opacity:1 !important;
+}
+.hero-section .hero-highlights-strip .strip-item > i {
+  flex:0 0 22px !important;
+  width:22px !important;
+  margin:3px 0 0 !important;
+  text-align:center !important;
+  font-size:18px !important;
+  color:#d98a91 !important;
+  -webkit-text-fill-color:#d98a91 !important;
+}
+.hero-section .hero-highlights-strip .strip-item > div { display:flex !important; flex-direction:column !important; gap:5px !important; min-width:0 !important; }
+.hero-section .hero-highlights-strip .strip-item strong { display:block !important; color:#fff !important; font-size:.76rem !important; line-height:1.4 !important; font-weight:750 !important; letter-spacing:.02em !important; }
+.hero-section .hero-highlights-strip .strip-item span { display:block !important; color:#e0e5eb !important; -webkit-text-fill-color:#e0e5eb !important; font-size:.82rem !important; line-height:1.5 !important; }
+
+/* Ticker: solid light gray, dark text, comfortable spacing */
+.promo-ticker { background:#f5f5f5 !important; border-top:1px solid #e8e8e8 !important; border-bottom:1px solid #e8e8e8 !important; overflow:hidden !important; }
+.promo-ticker .ticker-flex {
+  display:flex !important;
+  align-items:center !important;
+  justify-content:space-between !important;
+  flex-wrap:wrap !important;
+  gap:12px 28px !important;
+  padding-top:17px !important;
+  padding-bottom:17px !important;
+}
+.promo-ticker .ticker-flex > span {
+  display:inline-flex !important;
+  align-items:center !important;
+  gap:9px !important;
+  color:#343a40 !important;
+  -webkit-text-fill-color:#343a40 !important;
+  font-size:.73rem !important;
+  font-weight:700 !important;
+  line-height:1.5 !important;
+  letter-spacing:.025em !important;
+  opacity:1 !important;
+}
+.promo-ticker .ticker-flex > span i { color:#a13a42 !important; -webkit-text-fill-color:#a13a42 !important; font-size:.85rem !important; }
+
+/* Services use the same content width and editorial hierarchy */
+.services-showcase { background:#fff !important; }
+.services-showcase .section-title-box { max-width:780px !important; margin:0 auto 36px !important; }
+.services-showcase .section-title-box.text-center { text-align:left !important; }
+.services-showcase .sub-badge { color:var(--matrix-burgundy) !important; -webkit-text-fill-color:var(--matrix-burgundy) !important; letter-spacing:.09em !important; }
+.services-showcase .main-title { color:#252a30 !important; -webkit-text-fill-color:#252a30 !important; font-size:clamp(2rem,3.5vw,3rem) !important; line-height:1.13 !important; letter-spacing:-.045em !important; font-weight:750 !important; }
+.services-showcase .section-desc { color:#535b64 !important; -webkit-text-fill-color:#535b64 !important; line-height:1.75 !important; }
+.services-showcase .section-desc strong { color:#343a40 !important; -webkit-text-fill-color:#343a40 !important; }
+
+/* Floating WhatsApp stays discreet and does not cover important content */
+.floating-wa-btn {
+  right:22px !important;
+  bottom:22px !important;
+  width:54px !important;
+  height:54px !important;
+  box-shadow:0 3px 12px rgba(20,25,31,.16) !important;
+  border:1px solid rgba(255,255,255,.35) !important;
+  animation:none !important;
+}
+.floating-wa-btn.pulse-glow { animation:none !important; box-shadow:0 3px 12px rgba(20,25,31,.16) !important; }
+.floating-tooltip {
+  font-family:'Inter',sans-serif !important;
+  font-size:.78rem !important;
+  font-weight:600 !important;
+  border:1px solid #dfe3e7 !important;
+  box-shadow:0 4px 16px rgba(20,25,31,.10) !important;
+  border-radius:6px !important;
+}
+a:focus-visible,button:focus-visible { outline:3px solid rgba(159,38,48,.45) !important; outline-offset:3px !important; }
+
+@media(max-width:900px) {
+  .hero-section .hero-highlights-strip { grid-template-columns:repeat(2,minmax(0,1fr)) !important; }
+  .promo-ticker .ticker-flex { justify-content:flex-start !important; }
+}
+@media(max-width:600px) {
+  .container { width:calc(100% - 32px) !important; }
+  .hero-section { min-height:unset !important; padding:48px 0 30px !important; background-position:58% center !important; }
+  .hero-section .hero-heading { font-size:clamp(2.2rem,10.5vw,3.15rem) !important; }
+  .hero-section .hero-cta-group { flex-direction:column !important; align-items:stretch !important; }
+  .hero-section .hero-cta-group .btn { width:100% !important; justify-content:center !important; }
+  .hero-section .hero-highlights-strip { grid-template-columns:repeat(2,minmax(0,1fr)) !important; gap:18px 12px !important; }
+  .hero-section .hero-highlights-strip .strip-item { gap:8px !important; }
+  .hero-section .hero-highlights-strip .strip-item > i { flex-basis:18px !important; width:18px !important; font-size:16px !important; }
+  .hero-section .hero-highlights-strip .strip-item strong { font-size:.69rem !important; }
+  .hero-section .hero-highlights-strip .strip-item span { font-size:.75rem !important; }
+  .promo-ticker .ticker-flex { display:grid !important; grid-template-columns:1fr !important; gap:10px !important; }
+  .floating-wa-btn { right:14px !important; bottom:14px !important; width:50px !important; height:50px !important; }
+}
