@@ -2001,3 +2001,39 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; transition-duration: .01ms !important; }
 }
+
+
+/* Refinamento de layout — cabeçalho e primeira dobra */
+@media (min-width: 1101px) {
+  .navbar { gap: 22px; }
+  .brand-logo { flex: 0 0 auto; gap: 10px; }
+  .brand-title { font-size: 1.34rem; letter-spacing: 1px; }
+  .brand-tagline { max-width: 205px; font-size: .58rem; letter-spacing: .75px; }
+  .nav-menu { flex: 1 1 auto; justify-content: center; gap: clamp(10px, 1.15vw, 19px); min-width: 0; }
+  .nav-link { white-space: nowrap; font-size: clamp(.69rem, .72vw, .78rem); letter-spacing: 0; }
+  .nav-cta { flex: 0 0 auto; }
+  .nav-cta .btn-red-pulsing { padding: 12px 14px; font-size: .72rem; white-space: nowrap; }
+}
+.hero-heading { max-width: 900px; }
+.hero-heading br { display: none; }
+.hero-heading { font-size: clamp(2.65rem, 4.8vw, 4.65rem); line-height: 1.04; }
+.hero-subheading { max-width: 720px; }
+.hero-highlights-strip { width: fit-content; max-width: 100%; }
+.strip-item { min-width: 0; }
+.strip-item strong { white-space: nowrap; }
+@media (min-width: 761px) {
+  .hero-highlights-strip { display: flex; }
+}
+@media (max-width: 1100px) and (min-width: 761px) {
+  .navbar { gap: 14px; }
+  .nav-menu { gap: 12px; }
+  .nav-link { font-size: .68rem; letter-spacing: 0; }
+  .brand-title { font-size: 1.2rem; }
+  .brand-tagline { max-width: 165px; font-size: .53rem; letter-spacing: .35px; }
+  .nav-cta .btn-red-pulsing { padding: 10px 11px; font-size: .68rem; }
+}
+@media (max-width: 760px) {
+  .hero-heading { font-size: clamp(2.15rem, 9vw, 3.25rem); line-height: 1.06; }
+  .hero-highlights-strip { width: 100%; }
+  .strip-item strong { white-space: normal; }
+}
