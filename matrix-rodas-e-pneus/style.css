@@ -2605,3 +2605,66 @@ footer,.footer { background:#172638 !important; }
 @media(max-width:600px) {
   .hero-section { background-position:60% center !important; }
 }
+
+/* Fix definitivo do hero: imagem local do projeto e contraste explícito */
+section#inicio.hero-section {
+  display:block !important;
+  min-height:590px !important;
+  padding:76px 0 42px !important;
+  background-color:#172638 !important;
+  background-image:
+    linear-gradient(90deg,rgba(13,20,29,.94) 0%,rgba(13,20,29,.84) 52%,rgba(13,20,29,.54) 100%),
+    url('./assets/suspensao.jpg') !important;
+  background-repeat:no-repeat !important;
+  background-position:center 45% !important;
+  background-size:cover !important;
+  color:#fff !important;
+}
+section#inicio.hero-section .container,
+section#inicio.hero-section .hero-container { position:relative !important; z-index:1 !important; }
+section#inicio.hero-section .hero-heading,
+section#inicio.hero-section .hero-heading *,
+section#inicio.hero-section .hero-badge,
+section#inicio.hero-section .hero-highlights-strip strong {
+  color:#fff !important;
+  -webkit-text-fill-color:#fff !important;
+  opacity:1 !important;
+  background-image:none !important;
+}
+section#inicio.hero-section .text-red-highlight {
+  color:#ef444b !important;
+  -webkit-text-fill-color:#ef444b !important;
+}
+section#inicio.hero-section .hero-subheading,
+section#inicio.hero-section .hero-highlights-strip span {
+  color:#e3e9ef !important;
+  -webkit-text-fill-color:#e3e9ef !important;
+  opacity:1 !important;
+}
+section#inicio.hero-section .hero-highlights-strip {
+  display:flex !important;
+  flex-wrap:wrap !important;
+  gap:18px 24px !important;
+  border-top:1px solid rgba(255,255,255,.28) !important;
+  background:transparent !important;
+}
+section#inicio.hero-section .hero-highlights-strip .strip-item {
+  color:#fff !important;
+  -webkit-text-fill-color:#fff !important;
+  opacity:1 !important;
+}
+section#inicio.hero-section .hero-highlights-strip .strip-item i {
+  color:#ef444b !important;
+  -webkit-text-fill-color:#ef444b !important;
+}
+.promo-ticker,.promo-ticker .ticker-flex,.promo-ticker .ticker-flex span {
+  background:#e9edf2 !important;
+  color:#263445 !important;
+  -webkit-text-fill-color:#263445 !important;
+  opacity:1 !important;
+}
+.promo-ticker .ticker-flex i { color:#b52d34 !important; -webkit-text-fill-color:#b52d34 !important; }
+@media(max-width:760px) {
+  section#inicio.hero-section { min-height:auto !important; padding:52px 0 34px !important; background-position:58% center !important; }
+  section#inicio.hero-section .hero-highlights-strip { display:grid !important; grid-template-columns:repeat(2,minmax(0,1fr)) !important; }
+}
