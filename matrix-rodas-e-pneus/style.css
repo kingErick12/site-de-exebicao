@@ -2491,3 +2491,54 @@ footer,.footer { background:#172638 !important; }
 @media(prefers-reduced-motion:reduce) {
   *,*::before,*::after { animation:none !important; transition:none !important; }
 }
+
+/* Correção de contraste: garante texto legível em todas as áreas claras */
+.hero-section, .services-showcase, .trust-pillars, .reviews-section, .location-section, .quote-section {
+  color:#202a35 !important;
+}
+.hero-section h1,.hero-section h2,.hero-section h3,
+.services-showcase h1,.services-showcase h2,.services-showcase h3,
+.trust-pillars h1,.trust-pillars h2,.trust-pillars h3,
+.reviews-section h1,.reviews-section h2,.reviews-section h3,
+.location-section h1,.location-section h2,.location-section h3,
+.quote-section h1,.quote-section h2,.quote-section h3 {
+  color:#172638 !important;
+  -webkit-text-fill-color:#172638 !important;
+  background:none !important;
+}
+.hero-section p,.hero-section li,
+.services-showcase p,.services-showcase li,
+.trust-pillars p,.trust-pillars li,
+.reviews-section p,.reviews-section li,
+.location-section p,.location-section li,
+.quote-section p,.quote-section li { color:#4c5967 !important; }
+.hero-section .text-red-highlight,.services-showcase .text-red,
+.trust-pillars .text-red,.reviews-section .text-red,.quote-section .text-red {
+  color:#b52d34 !important;
+  -webkit-text-fill-color:#b52d34 !important;
+  background:none !important;
+}
+.header .nav-link { color:#334155 !important; }
+.header .nav-link:hover,.header .nav-link.active { color:#b52d34 !important; }
+.brand-wordmark-main { color:#172638 !important; -webkit-text-fill-color:#172638 !important; }
+.brand-wordmark-sub { color:#596779 !important; -webkit-text-fill-color:#596779 !important; }
+.offer-card,.pillar-card,.review-box,.quote-form-container,.location-card-grid {
+  color:#202a35 !important;
+}
+.offer-title,.pillar-title,.form-header-title,.review-user,.footer-header {
+  color:#172638 !important;
+}
+.offer-text,.offer-features,.pillar-text,.review-quote,.quote-desc,.footer-text-bio {
+  color:#4c5967 !important;
+}
+.footer-dark,footer,.footer {
+  background:#172638 !important;
+  color:#eef2f6 !important;
+}
+.footer-dark h1,.footer-dark h2,.footer-dark h3,.footer-dark p,.footer-dark li,
+.footer-dark .footer-header,.footer-dark .footer-text-bio,.footer-dark .footer-item,
+.footer-dark .footer-link-list a,footer h1,footer h2,footer h3,footer p,footer a {
+  color:#eef2f6 !important;
+  -webkit-text-fill-color:#eef2f6 !important;
+}
+.footer-dark .text-red,footer .text-red { color:#e6a3a7 !important; -webkit-text-fill-color:#e6a3a7 !important; }
