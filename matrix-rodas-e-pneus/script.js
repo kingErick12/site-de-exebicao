@@ -220,3 +220,29 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
+
+// Alternância entre modo claro e escuro, com preferência salva neste navegador.
+document.addEventListener('DOMContentLoaded', () => {
+  const themeButton = document.getElementById('theme-toggle');
+  if (!themeButton) return;
+
+  const applyTheme = (dark) => {
+    document.body.classList.toggle('dark-mode', dark);
+    themeButton.setAttribute('aria-pressed', String(dark));
+    themeButton.setAttribute('aria-label', dark ? 'Ativar modo claro' : 'Ativar modo escuro');
+    themeButton.innerHTML = dark
+      ? '<i class="fa-solid fa-sun" aria-hidden="true"></i><span>Modo claro</span>'
+      : '<i class="fa-solid fa-moon" aria-hidden="true"></i><span>Modo escuro</span>';
+  };
+
+  let savedTheme = null;
+  try { savedTheme = localStorage.getItem('matrix-theme'); } catch (error) {}
+  applyTheme(savedTheme === 'dark');
+
+  themeButton.addEventListener('click', () => {
+    const dark = !document.body.classList.contains('dark-mode');
+    applyTheme(dark);
+    try { localStorage.setItem('matrix-theme', dark ? 'dark' : 'light'); } catch (error) {}
+  });
+});
