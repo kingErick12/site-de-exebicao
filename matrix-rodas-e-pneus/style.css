@@ -1566,3 +1566,14 @@ select option {
     height: 210px;
   }
 }
+
+
+/* Refinamento executivo: hierarquia, foco acessível e microinterações */
+:focus-visible { outline: 2px solid var(--red-primary); outline-offset: 3px; }
+.btn, .nav-link, .offer-card, .pillar-card, .review-box { transition: transform .22s ease, border-color .22s ease, box-shadow .22s ease, background-color .22s ease; }
+.btn { letter-spacing: .015em; }
+.btn:focus-visible, a:focus-visible, button:focus-visible { border-radius: 4px; }
+.offer-card, .pillar-card, .review-box { box-shadow: 0 12px 30px rgba(0,0,0,.18); }
+.offer-card:hover, .pillar-card:hover { box-shadow: 0 18px 42px rgba(0,0,0,.32); }
+.section-title-box .main-title { text-wrap: balance; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; } }
