@@ -2164,3 +2164,89 @@ footer, .footer { background: #0c0c0c; }
 @media (max-width: 760px) {
   .brand-image-logo { width: 112px; height: 48px; }
 }
+
+
+/* =========================================================
+   Redesign executivo corporativo — Matrix Rodas e Pneus
+   Paleta navy/grafite/off-white; acento vermelho discreto
+========================================================= */
+:root {
+  --bg-body: #f3f5f8;
+  --bg-surface: #ffffff;
+  --bg-surface-2: #e9edf2;
+  --text-primary: #182230;
+  --text-secondary: #566273;
+  --navy-900: #14263d;
+  --navy-800: #1c3553;
+  --brand-accent: #b72f36;
+  --brand-accent-hover: #98272d;
+  --border-subtle: #d9e0e8;
+  --shadow-card: 0 8px 24px rgba(20,38,61,.07);
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 10px;
+}
+html { scroll-behavior: smooth; }
+body { background: #f3f5f8; color: #182230; font-family: 'Inter', sans-serif; }
+.top-bar { background: #101e30; color: #dce4ed; border-color: #26384c; }
+.top-bar a { color: inherit; }
+.top-whatsapp-btn { background: #b72f36; border: 1px solid #b72f36; border-radius: 6px; }
+.header { background: rgba(255,255,255,.98); color: #182230; border-bottom: 1px solid #d9e0e8; box-shadow: 0 3px 12px rgba(20,38,61,.05); }
+.brand-title { color: #14263d; font-family: 'Inter', sans-serif; font-weight: 800; letter-spacing: -.5px; }
+.brand-tagline { color: #647184; letter-spacing: .65px; }
+.logo-symbol { background: #14263d; color: #fff; border-radius: 7px; box-shadow: none; }
+.nav-link { color: #455366; font-family: 'Inter', sans-serif; font-weight: 600; letter-spacing: 0; }
+.nav-link:hover, .nav-link.active { color: #14263d; }
+.nav-link::after { background: #b72f36; }
+.btn-red-pulsing, .btn-hero-whatsapp, .btn-submit-red { background: #b72f36; border-radius: 6px; box-shadow: none; animation: none; }
+.btn-red-pulsing:hover, .btn-hero-whatsapp:hover, .btn-submit-red:hover { background: #98272d; box-shadow: none; transform: translateY(-1px); }
+.hero-section {
+  color: #fff;
+  background:
+    linear-gradient(90deg, rgba(13,27,44,.94) 0%, rgba(13,27,44,.82) 46%, rgba(13,27,44,.50) 100%),
+    url('https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=2200&q=85') center 55% / cover no-repeat,
+    #14263d;
+}
+.hero-bg-overlay { display: none; }
+.hero-heading { font-family: 'Inter', sans-serif; letter-spacing: -1.4px; line-height: 1.04; text-shadow: none; }
+.text-red-highlight { color: #e5a0a4; text-shadow: none; }
+.hero-badge { border-radius: 4px; box-shadow: none; }
+.badge-dot { box-shadow: none; }
+.hero-subheading { color: #e1e7ee; line-height: 1.75; }
+.btn-hero-whatsapp { border: 1px solid #b72f36; }
+.btn-hero-outline { border: 1px solid rgba(255,255,255,.55); border-radius: 6px; background: rgba(10,20,33,.18); }
+.btn-hero-outline:hover { background: rgba(255,255,255,.09); }
+.hero-highlights-strip { background: transparent; border: 0; border-top: 1px solid rgba(255,255,255,.24); border-radius: 0; box-shadow: none; }
+.strip-item i { filter: none; color: #e5a0a4; }
+.promo-ticker { background: #e8edf3; color: #27384c; border-color: #d7dfe8; }
+.services-showcase, .reviews-section, .location-section, .quote-section { background: #f3f5f8; color: #182230; }
+.trust-pillars { background: #e9edf2; border-color: #d9e0e8; }
+.sub-badge { color: #8e2930; letter-spacing: .8px; }
+.red-line { background: #b72f36; box-shadow: none; }
+.offer-card, .pillar-card, .review-box, .quote-form-container {
+  background: #fff; color: #182230; border: 1px solid #d9e0e8; border-radius: 8px; box-shadow: 0 8px 24px rgba(20,38,61,.06);
+}
+.offer-card:hover, .pillar-card:hover { transform: translateY(-2px); border-color: #b8c5d4; box-shadow: 0 12px 28px rgba(20,38,61,.10); }
+.offer-card p, .pillar-card p, .review-box p, .quote-form-container p { color: #566273; }
+.offer-badge, .pillar-icon { background: #14263d; color: #fff; border-radius: 7px; box-shadow: none; }
+.offer-price-box { background: #f3f5f8; border: 1px solid #d9e0e8; border-radius: 6px; }
+.btn-card-photo { background: #fff; color: #14263d; border: 1px solid #b8c5d4; border-radius: 6px; }
+.btn-card-whatsapp { background: #246b49; border-radius: 6px; }
+.quote-form-container::before { display: none; }
+.check-item { background: #f7f9fb; color: #27384c; border-color: #d9e0e8; border-radius: 6px; }
+input, select, textarea { background: #fff; color: #182230; border: 1px solid #c8d1dc; border-radius: 6px; }
+input:focus, select:focus, textarea:focus { border-color: #44678f; box-shadow: 0 0 0 3px rgba(68,103,143,.12); }
+.google-badge-pill { border-radius: 6px; background: #fff; border: 1px solid #d9e0e8; }
+footer, .footer { background: #101e30; color: #e4eaf1; }
+footer a, .footer a { color: #e4eaf1; }
+.whatsapp-float, .floating-whatsapp, .whatsapp-button-float { box-shadow: 0 4px 12px rgba(0,0,0,.14) !important; }
+i.fa-solid, i.fa-brands { display: inline-flex; align-items: center; justify-content: center; line-height: 1; vertical-align: -0.08em; }
+.btn-red-pulsing, .btn-hero-whatsapp, .btn-hero-outline, .btn-submit-red, .btn-card-photo, .btn-card-whatsapp { display: inline-flex; align-items: center; justify-content: center; gap: 9px; }
+@media (max-width: 760px) {
+  .hero-section { background-position: 60% center; }
+  .hero-heading { letter-spacing: -.7px; }
+  .offer-card, .pillar-card, .review-box, .quote-form-container { border-radius: 8px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+}
