@@ -2962,3 +2962,108 @@ a:focus-visible,button:focus-visible { outline:3px solid rgba(159,38,48,.45) !im
     gap: 16px !important;
   }
 }
+
+
+/* Acessibilidade: preços e condições sempre legíveis no tema claro */
+.services-showcase .offer-price-box {
+  background: #f3f5f8 !important;
+  border: 1px solid #d8dee7 !important;
+  color: #202833 !important;
+}
+.services-showcase .offer-price-box .price-prefix {
+  color: #535d6a !important;
+  -webkit-text-fill-color: #535d6a !important;
+}
+.services-showcase .offer-price-box .price-value,
+.services-showcase .offer-price-box .price-value .moeda {
+  color: #202833 !important;
+  -webkit-text-fill-color: #202833 !important;
+  opacity: 1 !important;
+}
+.services-showcase .offer-price-box .price-parcelas {
+  color: #4c5867 !important;
+  -webkit-text-fill-color: #4c5867 !important;
+  opacity: 1 !important;
+}
+.theme-toggle {
+  display:inline-flex !important; align-items:center !important; justify-content:center !important;
+  gap:8px !important; min-height:42px !important; padding:0 13px !important;
+  border:1px solid #d8dee7 !important; border-radius:6px !important;
+  background:#fff !important; color:#273342 !important; cursor:pointer !important;
+  font:600 .82rem 'Inter',sans-serif !important; white-space:nowrap !important;
+}
+.theme-toggle i { color:#9f2630 !important; }
+.theme-toggle:hover { background:#f4f6f8 !important; }
+@media(max-width:1100px) {
+  .theme-toggle span { display:none !important; }
+  .theme-toggle { width:42px !important; padding:0 !important; }
+}
+@media(max-width:600px) {
+  .nav-cta { gap:8px !important; }
+  .theme-toggle { min-width:38px !important; min-height:38px !important; }
+}
+
+/* Tema escuro: contraste reforçado para textos, cartões e preços */
+body.dark-mode { background:#111418 !important; color:#e8edf3 !important; }
+body.dark-mode .header,
+body.dark-mode .services-showcase,
+body.dark-mode .pillars-section,
+body.dark-mode .reviews-section,
+body.dark-mode .location-section,
+body.dark-mode .quote-section,
+body.dark-mode footer,
+body.dark-mode .site-footer {
+  background:#171b21 !important; color:#e8edf3 !important;
+}
+body.dark-mode .header { border-bottom:1px solid #303640 !important; }
+body.dark-mode .nav-link { color:#e0e5ec !important; }
+body.dark-mode .nav-link:hover,
+body.dark-mode .nav-link.active { color:#ff626c !important; }
+body.dark-mode .services-showcase .main-title,
+body.dark-mode .services-showcase .offer-title,
+body.dark-mode .section-title-box h2,
+body.dark-mode .pillar-title,
+body.dark-mode .review-name,
+body.dark-mode .quote-title,
+body.dark-mode .location-title {
+  color:#f4f6f9 !important; -webkit-text-fill-color:#f4f6f9 !important;
+}
+body.dark-mode .services-showcase .section-desc,
+body.dark-mode .services-showcase .section-desc strong,
+body.dark-mode .services-showcase .offer-text,
+body.dark-mode .offer-features li,
+body.dark-mode .pillar-text,
+body.dark-mode .review-quote,
+body.dark-mode .quote-desc,
+body.dark-mode .footer-text-bio,
+body.dark-mode .location-section p {
+  color:#c4ccd6 !important; -webkit-text-fill-color:#c4ccd6 !important;
+}
+body.dark-mode .services-showcase .services-catalog-grid > .offer-card,
+body.dark-mode .offer-card {
+  background:#20252d !important; border-color:#353d48 !important;
+  box-shadow:0 4px 16px rgba(0,0,0,.22) !important;
+}
+body.dark-mode .services-showcase .offer-price-box {
+  background:#15191f !important; border-color:#3b4552 !important; color:#f4f6f9 !important;
+}
+body.dark-mode .services-showcase .offer-price-box .price-prefix,
+body.dark-mode .services-showcase .offer-price-box .price-parcelas {
+  color:#c7d0dc !important; -webkit-text-fill-color:#c7d0dc !important;
+}
+body.dark-mode .services-showcase .offer-price-box .price-value,
+body.dark-mode .services-showcase .offer-price-box .price-value .moeda {
+  color:#ffffff !important; -webkit-text-fill-color:#ffffff !important;
+}
+body.dark-mode .promo-ticker { background:#20252d !important; border-color:#353d48 !important; }
+body.dark-mode .promo-ticker .ticker-flex > span { color:#e0e6ee !important; -webkit-text-fill-color:#e0e6ee !important; }
+body.dark-mode .theme-toggle { background:#242a33 !important; color:#f2f5f9 !important; border-color:#48515e !important; }
+body.dark-mode .theme-toggle:hover { background:#303844 !important; }
+body.dark-mode input,
+body.dark-mode select,
+body.dark-mode textarea { background:#20252d !important; color:#f4f6f9 !important; border-color:#48515e !important; }
+body.dark-mode .photo-modal-content,
+body.dark-mode .modal-content { background:#20252d !important; color:#f4f6f9 !important; }
+body.dark-mode .photo-modal-content h2,
+body.dark-mode .photo-modal-content p,
+body.dark-mode .photo-modal-content li { color:#e1e7ef !important; }
