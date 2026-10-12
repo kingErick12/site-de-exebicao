@@ -2571,3 +2571,37 @@ footer,.footer { background:#172638 !important; }
   color:#b52d34 !important;
   fill:currentColor;
 }
+
+/* Hero com fotografia real da oficina, mantendo contraste e leitura */
+.hero-section {
+  position:relative !important;
+  isolation:isolate;
+  background:
+    linear-gradient(90deg,rgba(12,17,23,.91) 0%,rgba(12,17,23,.78) 48%,rgba(12,17,23,.38) 100%),
+    url('https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=2200&q=85')
+    center 55% / cover no-repeat,
+    #172638 !important;
+  color:#fff !important;
+}
+.hero-section::before { content:none !important; }
+.hero-section .hero-badge { color:#f1f4f7 !important; -webkit-text-fill-color:#f1f4f7 !important; }
+.hero-section .hero-heading,
+.hero-section h1,.hero-section h2,.hero-section h3 {
+  color:#fff !important;
+  -webkit-text-fill-color:#fff !important;
+  text-shadow:none !important;
+}
+.hero-section .text-red-highlight {
+  color:#ef444b !important;
+  -webkit-text-fill-color:#ef444b !important;
+}
+.hero-section .hero-subheading,
+.hero-section p { color:#e1e7ee !important; -webkit-text-fill-color:#e1e7ee !important; }
+.hero-section .hero-highlights-strip { border-top-color:rgba(255,255,255,.24) !important; }
+.hero-section .hero-highlights-strip .strip-item,
+.hero-section .hero-highlights-strip .strip-item strong { color:#fff !important; -webkit-text-fill-color:#fff !important; }
+.hero-section .hero-highlights-strip .strip-item span { color:#d4dce5 !important; -webkit-text-fill-color:#d4dce5 !important; }
+.hero-section .hero-highlights-strip .strip-item i { color:#ef444b !important; -webkit-text-fill-color:#ef444b !important; }
+@media(max-width:600px) {
+  .hero-section { background-position:60% center !important; }
+}
