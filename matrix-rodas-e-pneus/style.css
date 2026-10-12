@@ -2150,3 +2150,17 @@ footer, .footer { background: #0c0c0c; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
 }
+
+/* Logo oficial enviada pelo cliente no cabeçalho */
+.brand-image-logo {
+  display: block;
+  width: 138px;
+  height: 58px;
+  object-fit: contain;
+  object-position: left center;
+  flex: 0 0 auto;
+}
+.brand-logo { display: flex; align-items: center; gap: 0; }
+@media (max-width: 760px) {
+  .brand-image-logo { width: 112px; height: 48px; }
+}
